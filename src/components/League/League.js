@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios';
 import './League.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function League() {
 
@@ -33,7 +35,7 @@ function League() {
                     <p>Sports Type: {league.strSport}</p>
 
                     <Link to={`/league/${league.idLeague}`}>
-                      <p className="btn btn-primary">Explore</p>
+                      <p className="btn btn-success">Explore <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></p>
                     </Link>
                   </div>
                 </div>
