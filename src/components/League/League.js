@@ -9,7 +9,7 @@ function League() {
 
   useEffect(() => {
     fetchLeagues()
-  }, [])
+  },)
 
   const fetchLeagues = async () => {
     let result = await axios.get('https://www.thesportsdb.com/api/v1/json/1/search_all_leagues.php?c=England&s=Soccer')
